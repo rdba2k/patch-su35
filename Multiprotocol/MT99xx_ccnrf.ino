@@ -282,7 +282,7 @@ static void __attribute__((unused)) MT99XX_send_packet()
 						packet[7] ^= 0x40;
 					break;
 				case SU35+8:
-					packet[6] = FLAG_SU35_6G
+					packet[6] = FLAG_SU35_6G 
 						| GET_FLAG( CH5_SW, FLAG_SU35_3D )
 						| GET_FLAG( !CH6_SW, FLAG_SU35_LED )
 						| GET_FLAG( CH7_SW, FLAG_SU35_FLASH )
